@@ -20,20 +20,20 @@
         <div class="container">
             <nav class="nav">
                 <div class="logo">
-                    <div class="logo-icon">🗺️</div>
-                    <span>TabiLog</span>
+                    <span class="logo-icon">✦</span>
+                    <span>TABILOG</span>
                 </div>
                 <ul class="nav-links" id="navLinks">
-                    <li><a href="#hero" class="active">ホーム</a></li>
-                    <li><a href="#map">マップ</a></li>
-                    <li><a href="#feed">フィード</a></li>
-                    <li><a href="#log">ログ</a></li>
-                    <li><a href="#reviews">レビュー</a></li>
-                    <li><a href="#matching">マッチング</a></li>
-                    <li><a href="#shiori">旅しおり</a></li>
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#map">Map</a></li>
+                    <li><a href="#feed">Feed</a></li>
+                    <li><a href="#log">Log</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#matching">Matching</a></li>
+                    <li><a href="#shiori">Shiori</a></li>
                 </ul>
                 <div class="nav-right">
-                    <button class="btn btn-primary btn-small" id="createPostBtn">＋ 投稿する</button>
+                    <button class="btn-outline btn-small" id="createPostBtn">POST</button>
                     <div class="nav-avatar" id="navAvatar">N</div>
                     <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
                 </div>
@@ -43,74 +43,50 @@
 
     <!-- ═══════════ Hero Section ═══════════ -->
     <section class="hero" id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <div class="hero-tag">🧳 一人旅初心者専用のSNS</div>
-                    <div class="solo-banner">
-                        <span class="pulse-dot"></span>
-                        はじめての一人旅を、もっと安心に。
-                    </div>
-                    <h1>
-                        きらきらだけじゃない、<br />
-                        <span class="highlight">リアルな旅の足跡</span>を<br />
-                        共有しよう
-                    </h1>
-                    <div class="hero-solo-emphasis">
-                        <span class="icon">🎒</span>
-                        <span>一人旅旅行者 3,291人 が実際の体験を投稿中！</span>
-                    </div>
-                    <p class="hero-description">
-                        一人旅だからこそ知りたい、移動・宿泊・観光のリアルな情報を<br>
-                        マップベースで確認・共有。加工なしの信頼できる旅日記。
-                    </p>
-                    <div class="hero-actions">
-                        <button class="btn btn-primary" id="heroStartBtn">旅日記を始める →</button>
-                        <button class="btn btn-secondary" id="heroExploreBtn">旅を探す</button>
-                    </div>
-                    <div class="hero-stats">
-                        <div class="hero-stat">
-                            <div class="hero-stat-value">12,847</div>
-                            <div class="hero-stat-label">一人旅日記</div>
-                        </div>
-                        <div class="hero-stat">
-                            <div class="hero-stat-value">3,291</div>
-                            <div class="hero-stat-label">ソロ旅行者</div>
-                        </div>
-                        <div class="hero-stat">
-                            <div class="hero-stat-value">98</div>
-                            <div class="hero-stat-label">対応都市</div>
-                        </div>
-                    </div>
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1920&h=1080&fit=crop" alt="一人旅" />
+        </div>
+        <div class="hero-content">
+            <div class="hero-label">Solo Travel Diary SNS for Beginners</div>
+            <h1>TABILOG</h1>
+            <p class="hero-description">
+                きらきらだけじゃない、リアルな行程を可視化する。<br>
+                一人旅初心者のための、移動・宿泊・観光を網羅した旅日記SNS。
+            </p>
+            <div class="hero-actions">
+                <button class="btn-outline btn-outline-white" id="heroStartBtn">旅日記を始める</button>
+                <button class="btn-outline btn-outline-white" id="heroExploreBtn">旅を探す</button>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-value">12,847</div>
+                    <div class="hero-stat-label">一人旅日記</div>
                 </div>
-                <div class="hero-visual">
-                    <div class="hero-map-preview">
-                        <div id="hero-map" style="width:100%;height:100%;"></div>
-                        <div class="hero-map-overlay">
-                            <div class="hero-map-route">
-                                <span class="route-dot">パリ</span>
-                                <span class="route-arrow">→</span>
-                                <span class="route-dot">バルセロナ</span>
-                                <span class="route-arrow">→</span>
-                                <span class="route-dot">ローマ</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value">3,291</div>
+                    <div class="hero-stat-label">ソロ旅行者</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value">98</div>
+                    <div class="hero-stat-label">対応都市</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ═══════════ Map Section ═══════════ -->
-    <section class="map-section" id="map">
+    <section class="map-section bg-gray" id="map">
         <div class="container">
-            <h2 class="section-title animate-on-scroll">📍 マップで旅を追体験</h2>
-            <p class="section-subtitle animate-on-scroll">旅行プランや口コミを地図上にマッピング。移動距離やルートを視覚的に再現。</p>
+            <div class="text-center animate-on-scroll">
+                <div class="section-label">Interactive Route Map</div>
+                <h2 class="section-title">MAP</h2>
+                <p class="section-subtitle">旅行プランや口コミを地図上にマッピング。<br>移動距離やルートを視覚的に再現する。</p>
+            </div>
             <div class="map-wrapper animate-on-scroll">
                 <div id="main-map"></div>
                 <div class="map-sidebar" id="mapSidebar">
                     <div class="map-info-card">
-                        <h4>📊 旅の統計</h4>
+                        <h4>Statistics</h4>
                         <div class="route-stats">
                             <div class="route-stat-item">
                                 <div class="value">2,156km</div>
@@ -131,7 +107,7 @@
                         </div>
                     </div>
                     <div class="map-info-card">
-                        <h4>🛤️ ルート</h4>
+                        <h4>Route</h4>
                         <ul class="map-stop-list" id="mapStopList">
                             <!-- stops filled dynamically -->
                         </ul>
@@ -144,8 +120,11 @@
     <!-- ═══════════ Feed Section ═══════════ -->
     <section class="feed-section" id="feed">
         <div class="container">
-            <h2 class="section-title animate-on-scroll">📝 一人旅のリアル日記フィード</h2>
-            <p class="section-subtitle animate-on-scroll">「映え」より「リアル」。一人旅だからこそ知りたい、移動の苦労やコスパ情報が満載。</p>
+            <div class="text-center animate-on-scroll">
+                <div class="section-label">Solo Travel Diaries</div>
+                <h2 class="section-title">FEED</h2>
+                <p class="section-subtitle">「映え」より「リアル」。一人旅だからこそ知りたい、<br>移動の苦労やコスパ情報が満載の旅日記。</p>
+            </div>
             <div class="feed-grid" id="feedGrid">
                 <!-- cards filled dynamically -->
             </div>
@@ -153,30 +132,31 @@
     </section>
 
     <!-- ═══════════ Log Section ═══════════ -->
-    <section class="log-section" id="log">
+    <section class="log-section bg-gray" id="log">
         <div class="container">
-            <h2 class="section-title animate-on-scroll">📸 ログ機能</h2>
-            <p class="section-subtitle animate-on-scroll">旅行中は忙しい。写真を撮るだけで位置情報から自動的にルートを作成。</p>
+            <div class="text-center animate-on-scroll">
+                <div class="section-label">Auto Route Generation</div>
+                <h2 class="section-title">LOG</h2>
+                <p class="section-subtitle">旅行中は忙しい。写真を撮るだけで<br>位置情報から自動的にルートを作成。</p>
+            </div>
             <div class="log-container animate-on-scroll">
-                <div>
-                    <div class="log-upload-area" id="logUpload">
-                        <span class="log-upload-icon">📷</span>
-                        <div class="log-upload-title">写真をドロップして旅ログを作成</div>
-                        <p class="log-upload-desc">写真のEXIF位置情報から自動的にルートを生成します</p>
-                        <button class="btn btn-primary btn-small" id="logSelectBtn">写真を選択</button>
-                        <input type="file" id="logFileInput" multiple accept="image/*" style="display:none" />
-                    </div>
+                <div class="log-upload-area" id="logUpload">
+                    <span class="log-upload-icon">📷</span>
+                    <div class="log-upload-title">写真をドロップして旅ログを作成</div>
+                    <p class="log-upload-desc">写真のEXIF位置情報から自動的にルートを生成します</p>
+                    <button class="btn-outline btn-small" id="logSelectBtn">SELECT PHOTOS</button>
+                    <input type="file" id="logFileInput" multiple accept="image/*" style="display:none" />
                     <div class="log-photos-grid" id="logPhotosGrid">
                         <!-- demo photos -->
                     </div>
                 </div>
                 <div class="log-result" id="logResult">
-                    <h3>✨ 自動生成ルート</h3>
+                    <h3>Generated Route</h3>
                     <div class="log-timeline" id="logTimeline">
                         <!-- filled dynamically -->
                     </div>
-                    <div style="margin-top:20px">
-                        <button class="btn btn-primary btn-small" id="saveLogBtn">この旅日記を保存</button>
+                    <div style="margin-top:24px">
+                        <button class="btn-outline btn-small" id="saveLogBtn">SAVE DIARY</button>
                     </div>
                 </div>
             </div>
@@ -186,33 +166,39 @@
     <!-- ═══════════ Review Section ═══════════ -->
     <section class="review-section" id="reviews">
         <div class="container">
-            <h2 class="section-title animate-on-scroll">⭐ 一人旅のためのオールインワン・レビュー</h2>
-            <p class="section-subtitle animate-on-scroll">一人旅旅行者による移動手段・宿泊先・観光スポットのリアル口コミを写真付きで一括管理。</p>
-            <div class="review-tabs animate-on-scroll" id="reviewTabs">
-                <button class="review-tab active" data-tab="transport">🚆 移動手段</button>
-                <button class="review-tab" data-tab="hotel">🏨 宿泊先</button>
-                <button class="review-tab" data-tab="spot">📸 観光スポット</button>
+            <div class="text-center animate-on-scroll">
+                <div class="section-label">All-in-One Reviews by Solo Travelers</div>
+                <h2 class="section-title">REVIEWS</h2>
+                <p class="section-subtitle">一人旅旅行者による移動手段・宿泊先・観光スポットの<br>リアル口コミを写真付きで一括管理。</p>
             </div>
-            <div class="review-grid animate-on-scroll" id="reviewGrid">
-                <!-- filled dynamically -->
+            <div class="animate-on-scroll">
+                <div class="review-tabs" id="reviewTabs">
+                    <button class="review-tab active" data-tab="transport">🚆 Transport</button>
+                    <button class="review-tab" data-tab="hotel">🏨 Hotels</button>
+                    <button class="review-tab" data-tab="spot">📸 Spots</button>
+                </div>
+                <div class="review-grid" id="reviewGrid">
+                    <!-- filled dynamically -->
+                </div>
             </div>
         </div>
     </section>
 
     <!-- ═══════════ Matching Section ═══════════ -->
-    <section class="matching-section" id="matching">
+    <section class="matching-section bg-dark" id="matching">
         <div class="container">
             <div class="matching-header animate-on-scroll">
                 <div>
-                    <h2 class="section-title">🤝 一人旅旅行者マッチング</h2>
-                    <p class="section-subtitle" style="margin-bottom:0">同じ期間に同じ都市にいる一人旅旅行者同士で、気軽に夕食を共にしよう。</p>
+                    <div class="section-label" style="color:rgba(255,255,255,0.4)">Connect with Solo Travelers</div>
+                    <h2 class="section-title">MATCHING</h2>
+                    <p class="section-subtitle">同じ期間に同じ都市にいる一人旅旅行者同士で、<br>気軽に夕食を共にしよう。</p>
                 </div>
                 <div class="matching-filter">
                     <select id="matchingCity">
-                        <option value="paris">🇫🇷 パリ</option>
-                        <option value="barcelona">🇪🇸 バルセロナ</option>
-                        <option value="rome">🇮🇹 ローマ</option>
-                        <option value="tokyo">🇯🇵 東京</option>
+                        <option value="paris">🇫🇷 PARIS</option>
+                        <option value="barcelona">🇪🇸 BARCELONA</option>
+                        <option value="rome">🇮🇹 ROME</option>
+                        <option value="tokyo">🇯🇵 TOKYO</option>
                     </select>
                 </div>
             </div>
@@ -223,21 +209,25 @@
     </section>
 
     <!-- ═══════════ Shiori Section ═══════════ -->
-    <section class="shiori-section" id="shiori">
+    <section class="shiori-section bg-gray" id="shiori">
         <div class="container">
-            <h2 class="section-title animate-on-scroll">📋 旅しおり</h2>
-            <p class="section-subtitle animate-on-scroll">収集した情報をまとめて「旅しおり」に。旅行先で利便性アップ。</p>
+            <div class="text-center animate-on-scroll">
+                <div class="section-label">Travel Bookmark</div>
+                <h2 class="section-title">SHIORI</h2>
+                <p class="section-subtitle">収集した情報をまとめて「旅しおり」に。<br>旅行先で利便性アップ。</p>
+            </div>
             <div class="shiori-container animate-on-scroll">
-                <div>
-                    <h3 style="font-size:1rem;margin-bottom:16px;display:flex;align-items:center;gap:8px">
-                        📌 保存した情報 <span class="badge badge-orange" id="shioriCount">6 件</span>
-                    </h3>
+                <div class="shiori-left">
+                    <div class="shiori-left-header">
+                        <h3>Saved Items</h3>
+                        <span class="shiori-count" id="shioriCount">6 items</span>
+                    </div>
                     <div class="shiori-list" id="shioriList">
                         <!-- filled dynamically -->
                     </div>
                 </div>
                 <div class="shiori-preview">
-                    <h3>📖 パリ → ローマ 14日間の旅</h3>
+                    <h3>パリ → ローマ 14日間の旅</h3>
                     <p class="shiori-preview-subtitle">2026年3月10日 〜 3月23日</p>
                     <div class="shiori-day">
                         <div class="shiori-day-title">Day 1-4: パリ 🇫🇷</div>
@@ -264,10 +254,10 @@
                         </div>
                     </div>
                     <div class="shiori-export">
-                        <button class="btn btn-primary btn-small">📄 PDF出力 <span
-                                class="badge badge-premium">Premium</span></button>
-                        <button class="btn btn-secondary btn-small">📱 オフライン保存 <span
-                                class="badge badge-premium">Premium</span></button>
+                        <button class="btn-outline btn-small">PDF EXPORT <span
+                                class="badge-premium">PREMIUM</span></button>
+                        <button class="btn-outline btn-small">OFFLINE <span
+                                class="badge-premium">PREMIUM</span></button>
                     </div>
                 </div>
             </div>
@@ -280,45 +270,45 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <div class="logo">
-                        <div class="logo-icon">🗺️</div>
-                        <span>TabiLog</span>
+                        <span class="logo-icon">✦</span>
+                        <span>TABILOG</span>
                     </div>
                     <p>きらきらだけじゃない、リアルな行程を可視化する。一人旅初心者のための旅行プラットフォーム。</p>
                 </div>
                 <div class="footer-col">
-                    <h4>機能</h4>
+                    <h4>Features</h4>
                     <ul>
-                        <li><a href="#map">マップ旅日記</a></li>
-                        <li><a href="#log">ログ機能</a></li>
-                        <li><a href="#reviews">レビュー</a></li>
-                        <li><a href="#matching">マッチング</a></li>
+                        <li><a href="#map">Map Diary</a></li>
+                        <li><a href="#log">Log</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#matching">Matching</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>サポート</h4>
+                    <h4>Support</h4>
                     <ul>
-                        <li><a href="#">ヘルプセンター</a></li>
-                        <li><a href="#">利用規約</a></li>
-                        <li><a href="#">プライバシーポリシー</a></li>
-                        <li><a href="#">お問い合わせ</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>プレミアム</h4>
+                    <h4>Premium</h4>
                     <ul>
-                        <li><a href="#">オフラインマップ</a></li>
-                        <li><a href="#">PDF行程表出力</a></li>
-                        <li><a href="#">広告なし</a></li>
-                        <li><a href="#">料金プラン</a></li>
+                        <li><a href="#">Offline Maps</a></li>
+                        <li><a href="#">PDF Export</a></li>
+                        <li><a href="#">Ad-Free</a></li>
+                        <li><a href="#">Plans</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 TabiLog. All rights reserved.</p>
+                <p>© 2026 TABILOG. ALL RIGHTS RESERVED.</p>
                 <div class="footer-socials">
-                    <a href="#" title="X (Twitter)">𝕏</a>
-                    <a href="#" title="Instagram">📷</a>
-                    <a href="#" title="YouTube">▶</a>
+                    <a href="#" title="X">𝕏</a>
+                    <a href="#" title="Instagram">IG</a>
+                    <a href="#" title="YouTube">YT</a>
                 </div>
             </div>
         </div>
